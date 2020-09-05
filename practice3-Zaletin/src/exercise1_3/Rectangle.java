@@ -13,10 +13,9 @@ public class Rectangle extends Shape{
     }
 
     public Rectangle(double width, double length,String color,boolean filled) {
+        super(color,filled);
         this.width = width;
         this.length = length;
-        this.color = color;
-        this.filled = filled;
     }
 
 
@@ -48,9 +47,11 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "exercise1_3.Rectangle{" +
+        return "Rectangle{" +
                 "width=" + width +
                 ", length=" + length +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
                 '}';
     }
 
